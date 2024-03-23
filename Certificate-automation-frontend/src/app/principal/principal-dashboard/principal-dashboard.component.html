@@ -1,0 +1,45 @@
+<button class="toggle-button" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+</button>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <div class="d-flex flex-column justify-content-sm-center ">
+            <div class="logo mt-5">
+              <div class="outer-pic-logo">
+                <div class="pic-logo">
+                  <img class="img" src="assets/logonew.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <mat-divider style="color: white;"></mat-divider>
+            <button (click)="selectTab('profile')" mat-flat-button routerLink="./profile" [ngClass]="sectionName=='profile' ? 'w-full bg-white':'w-full bg-transparent'">Profile</button>
+            <hr>
+            <button (click)="selectTab('approval-request')" mat-flat-button routerLink="./approval-request" [ngClass]="sectionName=='approval-request' ? 'w-full bg-white':'w-full bg-transparent'">Approval Requests</button>
+
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+          <button routerLink="/" class="absolute top-10 rounded-md right-10 w-10 h-10 hover:bg-gray-400"><img src="https://www.svgviewer.dev/static-svgs/33599/logout.svg" alt=""></button>
+          <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<div *ngIf="spinner" class="absolute z-10 top-0 left-0 w-full h-full flex flex-row justify-center items-center spinner">
+  <section >
+    <div class="loader loader-1 z-50 opacity-100">
+      <div class="loader-outter"></div>
+      <div class="loader-inner"></div>
+    </div>
+</section>
+</div>

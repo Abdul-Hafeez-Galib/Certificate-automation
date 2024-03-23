@@ -1,0 +1,53 @@
+<main class="main">
+  <form action="" class="flex flex-col items-center" [formGroup]="applicationForm">
+    <mat-form-field class="mt-5" appearance="fill">
+      <mat-label >Name of the student</mat-label>
+      <input matInput formControlName="name" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label >Admission No.</mat-label>
+      <input matInput type="number" formControlName="admissionNo" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label >KTU Registration No.</mat-label>
+      <input matInput formControlName="regNo" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label >Programme</mat-label>
+      <input matInput formControlName="program" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label >Semester</mat-label>
+      <input matInput formControlName="semester" >
+    </mat-form-field>
+
+
+    <div class="details px-6 mt-5 mb-5 ">
+      <span class="details-head w-max flex flex-col justify-start">Certificates Required</span>
+      <div *ngFor="let i of certificates" class="py-8 grid grid-cols-2 gap-4 ">
+        <div class="flex flex-row justify-between items-center">
+          <span>{{i}}</span>
+          <button mat-button class="button1" (click)="editCustomDoc()">View</button>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label >Phone No.</mat-label>
+      <input matInput type="number" formControlName="phoneNumber" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label >Email </mat-label>
+      <input matInput formControlName="email" >
+    </mat-form-field>
+
+    <div class="flex flex-row justify-between w-full">
+        <button *ngIf="userType!='dean'" class="bg-green-600 btn text-white w-32 p-2 hover:bg-green-700" (click)="forward()">Forward</button>
+        <button class="bg-red-500 btn text-white w-36 p-2 hover:bg-red-700" (click)="cancel()">Cancel Request</button>
+        <button *ngIf="userType=='dean'" class="bg-green-600 btn text-white w-36 hover:bg-green-700 p-2" (click)="verifyReturn()">Verify and Return</button>
+    </div>
+  </form>
+</main>

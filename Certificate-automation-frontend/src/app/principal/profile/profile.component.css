@@ -1,0 +1,149 @@
+.main{
+  padding: 10%;
+
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.text-secondary{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.first-half{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #D9D9D9;
+  mix-blend-mode: normal;
+  height: 200px;
+  width: 100%;
+  border-radius: 60px 60px 0px 0px;
+}
+.second-half{
+  height: 200px;
+  width: 100%;
+  background: #F5F5F5;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #89ABE3;
+  border-radius: 0px 0px 20px 20px;
+}
+.text-sub{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  padding: 2px;
+  color: #6D62AD;
+
+
+}
+.details-head{
+  position: relative;
+  top: 60px;
+  left:20px;
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  width: max-content;
+  padding: 5px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  background: #F5F5F5;
+  color: #000000;
+}
+.details{
+  width: 100%;
+  height: 250px;
+  background: #F5F5F5;
+border: 1px solid #89ABE3;
+border-radius: 20px;
+}
+.box-detail{
+  background: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 20px;
+}
+.label{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #A8A2A2;
+}
+.username{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 61px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  padding-left: 5%;
+  color: #6D62AD;
+}
+.roll-no{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-right: 5%;
+  color: #000000;
+}
+.role{
+width: 150px;
+height: 150px;
+margin-right: 20px;
+}
+.dp{
+  position: relative;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  left: 30px;
+  border-radius: 100%;
+}

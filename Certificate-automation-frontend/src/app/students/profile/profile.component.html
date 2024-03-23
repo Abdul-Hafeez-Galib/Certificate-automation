@@ -1,0 +1,125 @@
+<main class="main">
+  <div class="profile">
+    <div class="first-half">
+      <img class="dp" src="https://cdn4.sharechat.com/WhatsAppdp_1c834b00_1586018334000_cmprsd_40.jpg" alt="">
+      <img class="role" src="assets/student-profile.jpg" alt="">
+    </div>
+    <div class="second-half">
+      <div class="flex flex-row justify-between mt-16">
+        <span class="username">{{userData.name}}</span>
+        <span class="roll-no">{{userData.employeeNo?userData.employeeNo:userData.admissionNo}}</span>
+      </div>
+      <div class="flex flex-row justify-between mt-2">
+        <div class="flex flex-col px-10">
+          <label for="" class="label">Phone</label>
+          <span class="text-secondary">{{userData.phoneNumber}}</span>
+        </div>
+        <div class="flex flex-col px-10">
+          <label for="" class="label">Email</label>
+          <span class="text-secondary">{{userData.email}}</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <span class="details-head">Basic Details</span>
+  <div class="details mt-10 flex flex-row justify-around items-center">
+
+    <div>
+      <span class="flex flex-row">Gender <span class="text-sub -mt-1 ml-5">{{userData.gender}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Date of Birth <span class="text-sub -mt-1 ml-5">{{userData.dob}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Phone Number <span class="text-sub -mt-1 ml-5">{{userData.phone}}</span></span>
+
+    </div>
+    <div class="box-detail">
+      <span class="flex flex-row">Email <span class="text-sub -mt-1 ml-5">{{userData.email}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Semester <span class="text-sub -mt-1 ml-5">{{userData.semester}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Branch <span class="text-sub -mt-1 ml-5">{{userData.branch}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Batch <span class="text-sub -mt-1 ml-5">{{userData.batch}}</span></span>
+    </div>
+    <div>
+
+    </div>
+  </div>
+
+  <span class="details-head">Admission Details</span>
+  <div class="details mt-10 flex flex-row justify-around items-center">
+
+    <div>
+      <span class="flex flex-row">Admission Number <span class="text-sub -mt-1 ml-5">{{userData.admissionNo}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Ktu ID <span class="text-sub -mt-1 ml-5">{{userData.ktuId}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Admission Year <span class="text-sub -mt-1 ml-5">{{userData.admissionYear}}</span></span>
+
+    </div>
+    <div class="box-detail">
+      <span class="flex flex-row">Admission Type <span class="text-sub -mt-1 ml-5">{{userData.admissionType}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Completion Year <span class="text-sub -mt-1 ml-5">{{userData.completionYear}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Program<span class="text-sub -mt-1 ml-5">{{userData.program}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Department <span class="text-sub -mt-1 ml-5">{{userData.department}}</span></span>
+    </div>
+    <div>
+
+    </div>
+  </div>
+
+  <span class="details-head">Guardian Details</span>
+  <div class="details mt-10 flex flex-row justify-around items-center">
+
+    <div>
+      <span class="flex flex-row">Gender <span class="text-sub -mt-1 ml-5">{{userData.gender}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Father Name <span class="text-sub -mt-1 ml-5">{{userData.fatherName}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Father Phone Number <span class="text-sub -mt-1 ml-5">{{userData.fatherPhone}}</span></span>
+
+    </div>
+    <div class="box-detail">
+      <span class="flex flex-row">Mother Name <span class="text-sub -mt-1 ml-5">{{userData.motherName}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">Mother Phone Number <span class="text-sub -mt-1 ml-5">{{userData.motherPhone}}</span></span>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+
+  <span class="details-head">Scholarship Details</span>
+  <div class="details mt-10 flex flex-row justify-around items-center">
+
+    <div>
+      <span class="flex flex-row">Reservation <span class="text-sub -mt-1 ml-5">{{userData.reservation}}</span></span>
+      <hr>
+      <br>
+      <span class="flex flex-row">egrantz <span class="text-sub -mt-1 ml-5">{{userData.egrantz}}</span></span>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+</main>

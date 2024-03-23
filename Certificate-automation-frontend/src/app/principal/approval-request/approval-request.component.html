@@ -1,0 +1,11 @@
+<div class="w-full p-10 h-max flex flex-col justify-center items-center">
+
+    <div *ngFor="let i of request" class="request mt-10 flex flex-row justify-between items-center">
+      
+      <span><span class="font-bold text-lg">{{i.name}}</span> • Dean </span>
+      <button mat-raised-button class="bg-blue-400 text-white" (click)="accept(i._id)">Accept</button>
+    </div>
+    <div *ngIf="!request.length">
+      No requests pending!!
+    </div>
+</div>

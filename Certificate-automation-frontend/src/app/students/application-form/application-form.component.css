@@ -1,0 +1,144 @@
+.main{
+  padding: 10%;
+
+}
+
+.title{
+  font-family: 'M PLUS 1';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #000000;
+
+
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.first-half{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #D9D9D9;
+  mix-blend-mode: normal;
+  height: 200px;
+  width: 100%;
+  border-radius: 60px 60px 0px 0px;
+}
+.details-head{
+  position: relative;
+  top: -10px;
+  left:0%;
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  background: #F5F5F5;
+  color: #5F5F5F;
+
+
+}
+.details{
+  width: 350px;
+  height: max-content;
+  background: #F5F5F5;
+  border: 1px solid #89ABE3;
+  border-radius: 20px;
+}
+.box-detail{
+  background: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 20px;
+}
+.label{
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #A8A2A2;
+}
+.submit-button{
+  background: linear-gradient(270deg, #89ABE3 2.92%, rgba(137, 171, 227, 0) 100%), linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline{
+  padding: 5px;
+}
+::ng-deep .mat-form-field-flex{
+  width:350px !important ;
+}
+
+.my-applications{
+  padding: 15px;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 10px;
+  height: max-content;
+}
+.my-form-button{
+  background-color: rgb(149, 179, 149);
+  border-radius: 20%;
+}
+.box{
+  padding: 15px;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 10px;
+  height: max-content;
+  width: 100%;
+  margin-top: 10px;
+}
+.title-applications{
+  font-family: 'M PLUS 1';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #000000;
+}
+.sts-button{
+  background-color: rgb(41, 75, 41) ;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.dwd-button{
+  background-color: rgb(10, 11, 10) ;
+  color: white;
+  width: max-content ;
+  border-radius: 5px;
+  padding:5px;
+}

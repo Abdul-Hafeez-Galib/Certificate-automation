@@ -1,0 +1,23 @@
+<main class="p-4 flex flex-col justify-center items-center">
+  <table class="table-fixed border-collapse border border-slate-400">
+    <thead class="p-2">
+      <tr>
+        <th class="p-2 border border-slate-300">Name</th>
+        <th class="p-2 border border-slate-300">Ktu ID</th>
+        <th class="p-2 border border-slate-300">Admission No</th>
+        <th class="p-2 border border-slate-300">Message</th>
+      </tr>
+    </thead>
+    <tbody class="p-2">
+      <tr *ngFor="let i of data">
+        <td class="p-2 border border-slate-300">{{i.name}}</td>
+        <td class="p-2 border border-slate-300">{{i.ktuId}}</td>
+        <td class="p-2 border border-slate-300">{{i.admissionNo}}</td>
+        <td class="p-2 border border-slate-300">{{i.message}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="w-full h-20 p-4 bg-white sticky bottom-0 flex flex-row justify-end items-center">
+    <button mat-raised-button class="bg-green-700 text-white" (click)="downloadAsCSV()">Download as CSV</button>
+  </div>
+</main>

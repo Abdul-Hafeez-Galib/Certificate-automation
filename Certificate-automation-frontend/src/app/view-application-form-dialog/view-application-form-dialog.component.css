@@ -1,0 +1,38 @@
+.main{
+  padding: 5%;
+  max-height: 450px;
+  overflow-y: auto;
+}
+.details-head{
+  position: relative;
+  top: -10px;
+  left:0%;
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  background: #F5F5F5;
+  color: #5F5F5F;
+
+
+}
+.details{
+  width: 300px;
+  height: max-content;
+  background: #F5F5F5;
+  border: 1px solid #89ABE3;
+  border-radius: 20px;
+}
+::ng-deep .mat-form-field-flex{
+  width:300px !important ;
+}
+.button1{
+  color: white !important;
+  background-color: darkcyan !important;
+}

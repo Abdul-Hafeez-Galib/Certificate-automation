@@ -1,0 +1,41 @@
+<div class="left">
+</div>
+<main class="main">
+  <div class="box">
+    <div class="logo">
+      <div class="outer-pic-logo">
+        <div class="pic-logo">
+        <img src="assets/logonew.jpg" alt="">
+      </div>
+      </div>
+      <span class="text-logo">COLLEGE OF ENGINEERING TRIVANDRUM</span>
+    </div>
+    <div class="outer_form">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
+
+        <h2 class="title">Login to your account</h2>
+
+
+        <mat-label class="label mb-5">Employee No./Admission No. <span *ngIf="!loginForm.get('employeeNo')?.errors">✔️</span></mat-label>
+        <input formControlName="employeeNo" class="txt" type="text" placeholder="Enter employee no." matInput>
+        <mat-error *ngIf="loginForm.get('employeeNo')?.hasError('required') && loginForm.get('employeeNo')?.touched" class="error">Employee no. is required</mat-error>
+
+        <mat-label class="label mt-5">Password <span *ngIf="!loginForm.get('password')?.errors">✔️</span></mat-label>
+        <input formControlName="password" class="txt" type="password" placeholder="Password" matInput>
+        <mat-error class="error" *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">Password is required</mat-error>
+        <mat-error class="error" *ngIf="!loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched && loginForm.get('password')?.errors">Password should have Atleast 8 charecters , one lower case,upper case and one special charecter </mat-error>
+
+        <button [disabled]="loginForm.invalid" mat-raised-button class="login mt-5" >Login</button>
+
+        <div mat-button style="background:transparent;width: 100%;padding-left: 10px;padding-right: 10px; display: flex;flex-direction: row; justify-content: center;border-radius: 5px;margin-top: 10px;" *ngIf="showError"><mat-error>Username/Password incorrect!!</mat-error></div>
+
+        <div class="sign-up">
+          <span >Does not have an account ?</span>
+          <a mat-raised-button class="sign-up-button" routerLink="/register">Sign Up</a>
+        </div>
+    </form>
+
+    </div>
+  </div>
+
+</main>
